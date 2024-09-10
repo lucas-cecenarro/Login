@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(181, 228, 228);
+}
+.container{
+    display: flex;
+    height: 700px;
+    width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.informacion{
+    background-image: url(images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 150px 50px;
+    width: 50%;
+}
+.text-1{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.informacion h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.informacion hr{
+    width: 55px;
+    border: 4px solid #fff;
+    margin-left: 170px;
+    margin-bottom: 25px;
+}
+.text-2{
+    color: #fff;
+    font-size: 18px;
+}
+.form{
+    padding: 150px 100px;
+    width: 50%;
+    text-align: center;
+    background-color: #fff;
+}
+.form h2{
+    color: steelblue;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.form p{
+    font-size: 16px;
+    color: #13090742;
+    margin-bottom: 25px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    outline: none;
+    border-color: steelblue;
+    border-width: 0px 0px 0px 5px; /*Elimina los bordes (0px) dejando solo el de la izquierda*/
+    border-style: solid;
+    padding: 15px 35px; /*espacio entre ambos inputs*/
+    margin-bottom: 20px;
+    background-color: #e0dede;
+}
+.inputs a {
+    color: cornflowerblue;
+    text-decoration: none; /*elimina la decoracion del texto, en este caso el subrayado del link*/
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+.submit{
+    background-color: steelblue; /*color del contorno*/
+    padding: 15px;
+    border: 0px; /*elimina los bordes*/
+    color: #fff; /*color de la letra*/
+    font-size: 18px; /*tamaño de la fuente*/
+    text-transform: uppercase;
+    border-radius: 25px; /*transforma los bordes cuadrados a forma circular*/
+}
+
+@media(max-width:990px) {
+
+    .container{
+        width: 350px;
+        height: 600px;
+        margin-top: 100px;
+    }
+    .informacion{
+        display: none;
+    }
+    .form{
+        width: 100%;
+        padding: 30px;
+    }
+    .form h2 {
+        margin-top: 40px;
+    }
+
+}
